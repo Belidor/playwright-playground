@@ -11,8 +11,9 @@ test.describe("Dynamic table app tests", () => {
     });
 
     test("Should verify Spider-Man's real name", async ({ page }) => {
+      const realName = 'Peter Parker';
+      const realNameCell = page.locator('text="Spider-Man" >> xpath=../../../../td[3]');
 
-      await expect(page.locator('body > div > table > thead > tr > th:nth-child(1)')).toBeVisible();
-
+      await expect(realNameCell).toHaveText(realName);
     });
 });
