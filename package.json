@@ -4,14 +4,22 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-      "run test": "npx playwright test",
-      "report": "npx playwright show-report",
-      "debug": "npx playwright test --debug",
+    "test": "npx playwright test",
+    "report": "npx playwright show-report",
+    "debug": "npx playwright test --debug"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@playwright/test": "^1.27.1"
+    "@playwright/test": "^1.27.1",
+    "@typescript-eslint/eslint-plugin": "^5.42.0",
+    "eslint": "^8.27.0",
+    "eslint-config-standard-with-typescript": "^23.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.5.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-react": "^7.31.10",
+    "typescript": "^4.8.4"
   }
 }
