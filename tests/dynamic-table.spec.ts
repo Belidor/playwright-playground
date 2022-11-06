@@ -1,10 +1,10 @@
 import { test, expect } from '@playwright/test';
 import { DynamicTablePage } from '../pages/dynamic-table-page';
 
-test.describe.serial("Dynamic table app tests", () => {
+test.describe("Dynamic table app tests", () => {
 
     test.beforeEach(async ({ page }) => {
-      const dynamicTablePage = new DynamicTablePage(page);
+      const dynamicTablePage = new DynamicTablePage();
 
       await dynamicTablePage.openApp();
     });
